@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kolumny</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class ="row">
+    <div  class="column" style="background-color:#aaa;">
+        <h2>kolumna nr 1</h2>
+      <!--        <p>cos</p-->
+    </div>
+   <div class="column" style="background-color: #bbb;">
+  <h2>kolumna 2</h2>
+
+
+   </div>
+
+
+</div>
+</body>
+</html>
