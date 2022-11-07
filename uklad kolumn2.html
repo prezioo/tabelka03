@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>uklad kolumn</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: 200px; /* ! */
+    }
+    .column2 {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 200px; /* ! */
+    }
+    .naglowek{
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height: 100px;
+    }
+    .stopka{
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+      .column2 {
+        width: 100%;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+<header class="naglowek" style="background-color: red">
+  <h1>Nagłówek</h1>
+</header>
+<main>
+
+  <div class="column" style="background-color: chocolate">
+    <h2>kolumna nr1</h2>
+  </div>
+  <div class="column2" style="background-color: royalblue">
+    <h2> kolumna nr2</h2>
+  </div>
+  <div class="column" style="background-color: white">
+    <h2> kolumna nr3</h2>
+  </div>
+
+</main>
+<footer class="stopka" style="background-color: indianred">
+  <h1>Stopka</h1>
+</footer>
+</body>
+</html>
