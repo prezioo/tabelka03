@@ -6,20 +6,21 @@
 </head>
 <body>
 <form action="to.html">
-      <fieldset>
-<legend>etykieta i mae pole tekstowe</legend>
-<label for="fname">Imię:</label><br />
-<input type="text" id="fname" name="fname"><br />
-<label for="lname">Nazwisko:</label><br />
-<input type="text" id="lname" name="lname"><br />
-<input type="submit" value="wyslij">
-</fieldset>
+  <fieldset>
+    <legend>etykieta i mae pole tekstowe</legend>
+    <label for="fname">Imię:</label><br/>
+    <input type="text" id="fname" name="fname"><br/>
+    <label for="lname">Nazwisko:</label><br/>
+    <input type="text" id="lname" name="lname"><br/>
+    <input type="submit" value="wyslij">
+  </fieldset>
 </form>
 
 <form action="to.html">
   <fieldset>
     <legend>przyciski</legend>
-    <button type="button" onclick="alert('witaj')">Funkcja alert() [JavaScript]</button> <br /><br />
+    <button type="button" onclick="alert('witaj')">Funkcja alert() [JavaScript]</button>
+    <br/><br/>
     <input type="submit" value="wyslij">
   </fieldset>
 </form>
@@ -27,32 +28,105 @@
 <form action="to.html">
   <fieldset>
     <legend>Duze pole tekstowe</legend>
-    <label for="message">Inwokacja:</label><br />
+    <label for="message">Inwokacja:</label><br/>
     <textarea id="message" name="message" rows="5"
               cols="50">
       Litwo, Ojczyzno moja! ty jesteś jak zdrowie;
 Ile cię trzeba cenić, ten tylko się dowie,
 Kto cię stracił. Dziś piękność twą w całej ozdobie
-Widzę i opisuję, bo tęsknię po tobie.</textarea><br />
+Widzę i opisuję, bo tęsknię po tobie.</textarea><br/>
     <input type="submit" value="wyslij">
   </fieldset>
 </form>
 
 <form action="to.html">
   <fieldset>
-  <legend>Lista jednokrotnego wyboru</legend>
-  <label for="cars1">wybierz ulubiona marke:<label>
-    <select id="cars1" name="cars1">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="alfa_romeo">Alfa Romeo</option>
-      <option value="bmw" disabled>bmw</option>
-      <option value="fiat" selected>Fiat</option>
-      <option value="audi">Audi</option>
-      <option value="mercedes">Mercedes</option>
-    </select><br />
-    <input type="submit" value="wyslij">
-    </fieldset>
+    <legend>Lista jednokrotnego wyboru</legend>
+    <label for="cars1">wybierz ulubiona marke:</label>
+      <select id="cars1" name="cars1">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="alfa_romeo">Alfa Romeo</option>
+        <option value="bmw" disabled>bmw</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+        <option value="mercedes">Mercedes</option>
+      </select><br/>
+      <input type="submit" value="wyslij">
+  </fieldset>
 </form>
+
+<form action="to.html">
+  <fieldset>
+    <legend>Lista wyboru z grupowaniem</legend>
+    <label for="cars2">Wybierz ulubiona marke:</label>
+    <select id="cars2" name="cars2">
+      <optgroup label="auta szwedzkie">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="auta niemieckie">
+        <option value="mercedes">Mercedes</option>
+        <option value="bmw" disabled>bmw</option>
+      </optgroup>
+      <optgroup label="auta wloskie">
+        <option value="saab">Saab</option>
+        <option value="alfa_romeo">Alfa Romeo</option>
+        <option value="fiat" selected>Fiat</option>
+      </optgroup>
+    </select>
+  </fieldset>
+</form>
+
+      <form action="to.html">
+        <fieldset>
+          <legend>Lista wielokrotnego wyboru</legend>
+          <label for="cars3">wybierz ulubiona marke:</label>
+            <select id="cars3" name="cars3" size="10" multiple>
+              <option value="volvo">Volvo</option>
+              <option value="saab"> selected>Saab</option>
+              <option value="alfa_romeo">Alfa Romeo</option>
+              <option value="bmw" disabled>bmw</option>
+              <option value="fiat" selected>Fiat</option>
+              <option value="audi">Audi</option>
+              <option value="mercedes">Mercedes</option>
+            </select>
+            <input type="submit" value="wyslij">
+        </fieldset>
+      </form>
+
+      <form action="to.html">
+        <fieldset>
+          <legend>Predefiniowane wartosci</legend>
+          <label for="browser_name">podaj nazwe przeglodarki:</label>
+          <input list="browsers" id="browser_name" name="browser_name">
+          <datalist id="browsers">
+            <option value="internet explorer">
+            <option value="firefox">
+            <option value="chrome">
+            <option value="opera">
+            <option value="safari">
+          </datalist>
+          <br />
+            <input type="submit" value="wyslij">
+        </fieldset>
+      </form>
+
+<form action="to.html">
+
+  <fieldset>
+    <legend>tekstowe zwykle i z haslem</legend><br />
+    <label for="username">zwykle pole tekstowe:</label>
+    <input type="text" id="username" name="username" required> <br /><br />
+    <label for="pass">pole typu haslo:</label>
+    <input type="password" id="pass" name="pass" required> <br /><br />
+    <input type="submit" value="wyslij">
+  </fieldset>
+</form>
+
+
+
+
+
 </body>
 </html>
