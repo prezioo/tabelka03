@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>formularz</title>
+</head>
+<body>
+<form action="to.html">
+  <fieldset>
+    <legend>etykieta i mae pole tekstowe</legend>
+    <label for="fname">Imię:</label><br/>
+    <input type="text" id="fname" name="fname" required><br/>
+    <label for="tname">Drugię imię:</label><br/>
+    <input type="text" id="tname" name="tname"><br/>
+    <label for="lname">Nazwisko:</label><br/>
+    <input type="text" id="lname" name="lname" required><br/>
+    <label for="data">data urodzenia:</label><br/>
+    <input type="date" id="data" name="data" min="1990-1-1" max="2022-11-18">
+    <label for="miejscowosc">Miejscowosc urodzenia:</label><br/>
+    <input type="text" id="miejscowosc" required><br/>
+    <label for="woje">Wojewodztwo urodzenia:</label>
+    <select id="woje" name="woje" required>
+      <option></option>
+      <option value="swietokrzyskie">swietokrzyskie</option>
+      <option value="lubuskie">lubuskie</option>
+      <option value="malo">malopolskie</option>
+      <option value="dolno">dolnoslaskie</option>
+      <option value="kujo">kujawsko-pomorskie</option>
+      <option value="lube">lubelskie</option>
+      <option value="lodzkie">lodzkie</option>
+      <option value="mazowieckie">mazowieckie</option>
+      <option value=
+    </select><br/>
+
+    <input type="submit" value="wyslij">
+  </fieldset>
+</form>
+
+</body>
+</html>
