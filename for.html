@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>formul</title>
+</head>
+<body>
+<form>
+  <fieldset>
+    <label for="mmarka">Marka</label><br>
+    <input type="text" id="mmarka" name="marka" required placeholder="wymagane"><br>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <label for="mmodel">Model</label><br>
+    <input type="text" id="mmodel" name="model"><br>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <legend>Typ nadwozia</legend>
+    <label for="cars1"></label>
+    <select id="cars1" name="cars1" multiple size="5">
+      <option value="SUV">SUV</option>
+      <option value="kombi">kombi</option>
+      <option value="sedan">sedan</option>
+      <option value="coupé">coupé</option>
+      <option value="kabriolet">kabriolet</option>
+    </select><br>
+    Wymagane
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <label for="data">Miesiąc i rok produkcji</label><br>
+    <input type="month" id="data" name="data"><br>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <label for="browser_name">Rodzaj paliwa</label>
+    <input list="browsers" id="browser_name" name="browser_name">
+    <datalist id="browsers">
+      <option value="LPG">
+      <option value="Elektryk">
+      <option value="Diesel">
+      <option value="Benzyna 98">
+      <option value="Benzyna 95">
+    </datalist><br>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <label for="paliwo1">Przebieg od</label>
+    <input list="browsers1" id="paliwo1" name="paliwo1">
+    <datalist id="browsers1">
+      <option value="25000">
+      <option value="50000">
+      <option value="75000">
+      <option value="100000">
+      <option value="125000">
+      <option value="150000">
+      <option value="175000">
+      <option value="200000">
+      <option value="225000">
+      <option value="250000">
+    </datalist><br>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <label for="paliwo">Przebieg do</label>
+    <input list="browsers2" id="paliwo" name="paliwo">
+    <datalist id="browsers2">
+      <option value="25000">
+      <option value="50000">
+      <option value="75000">
+      <option value="100000">
+      <option value="125000">
+      <option value="150000">
+      <option value="175000">
+      <option value="200000">
+      <option value="225000">
+      <option value="250000">
+    </datalist><br>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <label>Cena od
+      <input type="range" value="1000" min="2000" max="500000" step="1000" oninput="this.nextElementSibling.value = this.value">
+      <output>2000</output>
+    </label>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <label>Cena do
+      <input type="range" value="1000" min="2000" max="500000" step="1000" oninput="this.nextElementSibling.value = this.value">
+      <output>2000</output>
+    </label><br>
+  </fieldset>
+  <input type="submit" value="wyślij">
+</form>
+</body>
+</html>
