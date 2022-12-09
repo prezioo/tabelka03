@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .cialo{
+      padding: 20px;
+      background-color: chocolate;
+      font-family: Arial, sans-serif;
+    }
+    .column1{
+      float: left;
+      width: 75%;
+      background-color: purple;
+    }
+    .column2{
+      float: left;
+      width: 25%;
+      height: 1268px;
+      background-color: red;
+    }
+    .row:after{
+      content: "";
+      display: table;
+      clear: both;
+      padding-left: 20px;
+    }
+    .naglowek{
+      height: 40px;
+      padding: 40px;
+      text-align: center;
+      background-color: lightpink;
+    }
+    .stopka{
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+      background-color: green;
+    }
+    @media screen and (max-width: 800px) {
+      .column1 {
+        width: 100%;
+      }
+
+      .column2 {
+        width: 100%;
+      }
+    }
+    .row{
+      margin: 0;
+      padding: .3rem;
+      font: 1rem 'Fira Sans', sans-serif;
+    }
+    .row > h1,
+    .jeden {
+      margin: .5rem;
+      padding: .3rem;
+      background-color: #eee;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body class="cialo">
+<header class="naglowek">
+  <h2>Nagłówek</h2>
+</header>
+<br />
+<section class="row">
+  <section class="column1">
+    <article class="jeden">
+      <h2>Tytuł artykułu</h2>
+      <h5>Dodany 02.12.22</h5>
+      <img alt="" src="/assets/kot.jpg">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </article>
+    <article class="jeden">
+      <h2>Tytuł artykułu</h2>
+      <h5>Dodany 02.12.22</h5>
+      <img alt="" src="/assets/kot.jpg">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </article>
+  </section>
+  <section class="column2">
+    <div class="jeden" style="margin-bottom: 20px">
+      <h1>O nas</h1>
+      <img src="/assets/kot.jpg" width="50%">
+    </div>
+    <div class="jeden" style="margin-bottom: 20px">
+      <h1>Proponowane artykyłu</h1>
+      <img src="/assets/kot.jpg" width="50%">
+      <br />
+      <img src="/assets/2.jfif" width="50%">
+    </div>
+    <div class="jeden" style="margin-bottom: 20px" >
+      <h1>Społeczność</h1>
+      <p>...</p>
+    </div>
+  </section>
+</section>
+<footer class="stopka">
+  <h2>Stopka</h2>
+</footer>
+</body>
+</html>
+</html>
